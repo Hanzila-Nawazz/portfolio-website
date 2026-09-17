@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Skills</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        *
+        {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body
+        {
+            font-family: 'Inter', sans-serif;
+            background-color: #fdfdfd;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        /* Header & Navigation */
+        header
+        {
+            background: #fff;
+            padding: 20px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        .logo a
+        {
+            text-decoration: none;
+            color: #333;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo h1
+        {
+            font-size: 22px;
+            font-weight: 700;
+        }
+
+        .nav-bar ul
+        {
+            list-style: none;
+            display: flex;
+            gap: 25px;
+        }
+
+        .nav-bar a
+        {
+            text-decoration: none;
+            color: #555;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        .nav-bar a:hover
+        {
+            color: #f97316;
+        }
+        
+        /* Skills Section Layout */
+        .skills-container
+        {
+            padding: 80px 50px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .page-title
+        {
+            text-align: center;
+            margin-bottom: 60px;
+            font-size: 36px;
+            color: #1e1b4b;
+        }
+        
+        .skills-grid
+        {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+        
+        .skill-card
+        {
+            background: #fff;
+            padding: 35px 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.04);
+            border-top: 4px solid #f97316;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .skill-card:hover
+        {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 24px rgba(249, 115, 22, 0.12);
+        }
+        
+        .skill-card h3
+        {
+            font-size: 20px;
+            color: #1e1b4b;
+            margin-bottom: 12px;
+        }
+        
+        .skill-card p
+        {
+            font-size: 15px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="./home.html">
+                <img src="522510.png" alt="logo" width="40">
+                <h1>Portfolio Website</h1>
+            </a>
+        </div>
+        <div class="nav-bar">
+            <nav>
+                <ul>
+                    <li><a href="./home.html">Home</a></li>
+                    <li><a href="./hobbies.html">Hobbies</a></li>
+                    <li><a href="./personallinks.html">Personal Skills</a></li>
+                    <li><a href="./imagegallery.html">Image Gallery</a></li>
+                    <li><a href="./contact.html">Contact Me</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="skills-container">
+        <h2 class="page-title">Technical Skills & Expertise</h2>
+        
+        <div class="skills-grid">
+            <div class="skill-card">
+                <h3>C++ Development</h3>
+                <p>Proficient in data structures, algorithmic problem solving, and building performance-critical backend solutions.</p>
+            </div>
+            
+            <div class="skill-card">
+                <h3>Python & Data Processing</h3>
+                <p>Experienced with pandas, NumPy, and NLTK for complex text processing, dataset analysis, and matrix calculations.</p>
+            </div>
+            
+            <div class="skill-card">
+                <h3>Full-Stack MERN</h3>
+                <p>Building responsive web applications using JavaScript/TypeScript, React, Next.js, Node.js, Express, and MongoDB.</p>
+            </div>
+            
+            <div class="skill-card">
+                <h3>Database Management</h3>
+                <p>Designing relational schemas, writing complex SQL queries, and handling transaction controls in MySQL and SQLite.</p>
+            </div>
+            
+            <div class="skill-card">
+                <h3>Network Simulation</h3>
+                <p>Designing enterprise topologies in Cisco Packet Tracer, including VLAN routing, subnets, and telephony services.</p>
+            </div>
+            
+            <div class="skill-card">
+                <h3>Software Architecture</h3>
+                <p>Applying SOLID design principles and structural, creational, and behavioral design patterns to build scalable systems.</p>
+            </div>
+            
+            <div class="skill-card">
+                <h3>Cloud Infrastructure</h3>
+                <p>Managing hosted applications and database instances using Oracle Cloud VMs, Railway, and Supabase.</p>
+            </div>
+            
+            <div class="skill-card">
+                <h3>Version Control</h3>
+                <p>Utilizing Git and GitHub for local branch management, repository synchronization, and codebase versioning.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

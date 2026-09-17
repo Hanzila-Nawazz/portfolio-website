@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hobbies - Hanzila Nawaz</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        *
+        {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body
+        {
+            font-family: 'Inter', sans-serif;
+            background-color: #fdfdfd;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        
+        header
+        {
+            background: #fff;
+            padding: 20px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        .logo a
+        {
+            text-decoration: none;
+            color: #333;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo h1
+        {
+            font-size: 22px;
+            font-weight: 700;
+        }
+
+        .nav-bar ul
+        {
+            list-style: none;
+            display: flex;
+            gap: 25px;
+        }
+
+        .nav-bar a
+        {
+            text-decoration: none;
+            color: #555;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        .nav-bar a:hover
+        {
+            color: #f97316;
+        }
+        
+        
+        .hobbies-container
+        {
+            padding: 60px 50px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .page-title
+        {
+            text-align: center;
+            margin-bottom: 50px;
+            font-size: 36px;
+            color: #1e1b4b;
+        }
+        
+       
+        .hobby-card
+        {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            background: #fff;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.04);
+            margin-bottom: 30px;
+            border-left: 5px solid #f97316; /* Orange line on the left */
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .hobby-card:hover
+        {
+            transform: translateX(8px); /* Minimal horizontal slide */
+            box-shadow: 0 10px 20px rgba(249, 115, 22, 0.1);
+        }
+        
+        .hobby-card img
+        {
+            width: 200px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+        
+        .hobby-info h3
+        {
+            font-size: 22px;
+            color: #1e1b4b;
+            margin-bottom: 10px;
+        }
+        
+        .hobby-info p
+        {
+            font-size: 15.5px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="./home.html">
+                <img src="522510.png" alt="logo" width="40">
+                <h1>Portfolio Website</h1>
+            </a>
+        </div>
+        <div class="nav-bar">
+            <nav>
+                <ul>
+                    <li><a href="./home.html">Home</a></li>
+                    <li><a href="./hobbies.html">Hobbies</a></li>
+                    <li><a href="./personallinks.html">Personal Skills</a></li>
+                    <li><a href="./imagegallery.html">Image Gallery</a></li>
+                    <li><a href="./contact.html">Contact Me</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="hobbies-container">
+        <h2 class="page-title">My Hobbies & Interests</h2>
+
+        <div class="hobby-card">
+            <img src="badminton.jpg" alt="Playing Badminton">
+            <div class="hobby-info">
+                <h3>Badminton</h3>
+                <p>I stay active and energetic by playing badminton. It is a fast paced game that keeps my reflexes sharp and serves as a great physical outlet away from the computer screen.</p>
+            </div>
+        </div>
+
+        <div class="hobby-card">
+            <img src="apple-placeholder.jpg" alt="Apple Architecture">
+            <div class="hobby-info">
+                <h3>Exploring Apple Architecture</h3>
+                <p>I have a strong interest in evaluating laptop hardware specifications, specifically digging into Apple MacBook chip variants and architectures to analyze their performance for heavy software engineering workloads.</p>
+            </div>
+        </div>
+
+        <div class="hobby-card">
+            <img src="marvel.jpg" alt="MCU Movies">
+            <div class="hobby-info">
+                <h3>Marvel Cinematic Universe Tracking</h3>
+                <p>I enjoy tracking  the MCU timeline in release order. I love diving into the timeline mechanics of shows like Loki that are based on time and physics.</p>
+            </div>
+        </div>
+
+        <div class="hobby-card">
+            <img src="calculus.jpg" alt="Mathematics">
+            <div class="hobby-info">
+                <h3>Solving Complex Math & Statistics</h3>
+                <p>In my downtime, I genuinely enjoy working through complex variable theory, conformal mappings, and exploring probability distributions or statistical regression models.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

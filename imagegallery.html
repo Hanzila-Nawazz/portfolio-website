@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery & Projects</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        *
+        {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body
+        {
+            font-family: 'Inter', sans-serif;
+            background-color: #fdfdfd;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        
+        header
+        {
+            background: #fff;
+            padding: 20px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        .logo a
+        {
+            text-decoration: none;
+            color: #333;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo h1
+        {
+            font-size: 22px;
+            font-weight: 700;
+        }
+
+        .nav-bar ul
+        {
+            list-style: none;
+            display: flex;
+            gap: 25px;
+        }
+
+        .nav-bar a
+        {
+            text-decoration: none;
+            color: #555;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        .nav-bar a:hover
+        {
+            color: #f97316;
+        }
+        
+        
+        .gallery-container
+        {
+            padding: 60px 50px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .page-title
+        {
+            text-align: center;
+            margin-bottom: 60px;
+            font-size: 36px;
+            color: #1e1b4b;
+        }
+        
+        .project-row
+        {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 80px;
+            gap: 50px;
+        }
+
+        .project-row.reverse
+        {
+            flex-direction: row-reverse;
+        }
+        
+        .project-text
+        {
+            flex: 1;
+            text-align: justify;
+        }
+
+        .project-text h3
+        {
+            font-size: 28px;
+            color: #f97316;
+            margin-bottom: 15px;
+        }
+
+        .project-text p
+        {
+            font-size: 16px;
+            color: #555;
+        }
+        
+        
+        .project-image
+        {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .project-image img
+        {
+            width: 350px;
+            height: 350px;
+            object-fit: cover; 
+            border-radius: 50%; 
+            box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+            display: block;
+            border: 4px solid #fff;
+        }
+        
+        .project-image img:hover
+        {
+            transform: scale(1.05);
+            box-shadow: 0 12px 25px rgba(249, 115, 22, 0.15); 
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="./home.html">
+                <img src="522510.png" alt="logo" width="40">
+                <h1>Portfolio Website</h1>
+            </a>
+        </div>
+        <div class="nav-bar">
+            <nav>
+                <ul>
+                    <li><a href="./home.html">Home</a></li>
+                    <li><a href="./hobbies.html">Hobbies</a></li>
+                    <li><a href="./personallinks.html">Personal Skills</a></li>
+                    <li><a href="./imagegallery.html">Image Gallery</a></li>
+                    <li><a href="./contact.html">Contact Me</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="gallery-container">
+        <h2 class="page-title">My Projects Gallery</h2>
+
+        <div class="project-row">
+            <div class="project-image">
+                <img src="attendance.jpg" alt="AI Attendance System">
+            </div>
+            <div class="project-text">
+                <h3>AI-Based Attendance System</h3>
+                <p>Designed the backend API and database architecture for an automated facial recognition attendance system, ensuring seamless data flow and module division. Its used for fast facial recognition based attendance and also for issuing warnings.</p>
+            </div>
+        </div>
+
+        <div class="project-row reverse">
+            <div class="project-image">
+                <img src="search.png" alt="Search Engine">
+            </div>
+            <div class="project-text">
+                <h3>C++ & Python Search Engine</h3>
+                <p>Developed a high-performance backend indexing system for lexical and semantic retrieval using the Google Patents Public Dataset.</p>
+            </div>
+        </div>
+
+        <div class="project-row">
+            <div class="project-image">
+                <img src="cisco.jpg" alt="Network Topologies">
+            </div>
+            <div class="project-text">
+                <h3>Enterprise Network Simulations</h3>
+                <p>Built multi-floor network topologies in Cisco Packet Tracer, configuring VLANs, subnets, and VoIP services for enterprise case studies.</p>
+            </div>
+        </div>
+
+        <div class="project-row reverse">
+            <div class="project-image">
+                <img src="recommend.png" alt="Recommendation System">
+            </div>
+            <div class="project-text">
+                <h3>Algorithmic Recommendation System</h3>
+                <p>Authored a system utilizing matrix factorization and stochastic gradient descent optimization to deliver hybrid recommendation strategies.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
