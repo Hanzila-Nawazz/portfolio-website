@@ -1,0 +1,419 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    font-family: 'Inter', sans-serif;
+    background-color: #fdfdfd;
+    color: #333;
+    line-height: 1.6;
+}
+
+header
+{
+    background: #fff;
+    padding: 20px 50px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+header::after
+{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.logo
+{
+    float: left;
+}
+
+.logo a
+{
+    text-decoration: none;
+    color: #333;
+}
+
+.logo img
+{
+    float: left;
+    margin-right: 10px;
+}
+
+.logo h1
+{
+    float: left;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 40px;
+}
+
+.nav-bar
+{
+    float: right;
+    margin-top: 8px;
+}
+
+.nav-bar ul
+{
+    list-style: none;
+}
+
+.nav-bar li
+{
+    float: left;
+    margin-left: 25px;
+}
+
+.nav-bar a
+{
+    text-decoration: none;
+    color: #555;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.nav-bar a:hover
+{
+    color: #f97316;
+}
+
+.page-title
+{
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 36px;
+    color: #1e1b4b;
+    clear: both;
+}
+
+.container
+{
+    padding: 80px 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.container::after
+{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.hero-text
+{
+    float: left;
+    width: 50%;
+    padding-right: 40px;
+    margin-top: 50px;
+}
+
+.hero-text h2
+{
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.hero-text h2 span
+{
+    color: #f97316;
+}
+
+.hero-text p
+{
+    font-size: 20px;
+    color: #555;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+.btn
+{
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #1e1b4b;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: background 0.3s;
+}
+
+.btn:hover
+{
+    background-color: #312e81;
+}
+
+.hero-image
+{
+    float: right;
+    width: 50%;
+    text-align: center;
+}
+
+.hero-image img
+{
+    max-width: 80%;
+    border-radius: 50%;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.hobbies-container
+{
+    padding: 60px 50px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.hobby-card
+{
+    background: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.04);
+    margin-bottom: 30px;
+    border-left: 5px solid #f97316;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    clear: both;
+}
+
+.hobby-card:hover
+{
+    transform: translateX(8px);
+    box-shadow: 0 10px 20px rgba(249, 115, 22, 0.1);
+}
+
+.hobby-card img
+{
+    float: left;
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 30px;
+}
+
+.hobby-info
+{
+    float: left;
+    width: calc(100% - 230px);
+}
+
+.hobby-info h3
+{
+    font-size: 22px;
+    color: #1e1b4b;
+    margin-bottom: 10px;
+}
+
+.hobby-info p
+{
+    font-size: 15.5px;
+    color: #555;
+}
+
+.gallery-container
+{
+    padding: 60px 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.project-row
+{
+    margin-bottom: 80px;
+}
+
+.project-row::after
+{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.project-text
+{
+    float: right;
+    width: 50%;
+    text-align: justify;
+    padding-left: 50px;
+    margin-top: 50px;
+}
+
+.project-row.reverse .project-text
+{
+    float: left;
+    padding-left: 0;
+    padding-right: 50px;
+}
+
+.project-text h3
+{
+    font-size: 28px;
+    color: #f97316;
+    margin-bottom: 15px;
+}
+
+.project-text p
+{
+    font-size: 16px;
+    color: #555;
+}
+
+.project-image
+{
+    float: left;
+    width: 50%;
+    text-align: center;
+}
+
+.project-row.reverse .project-image
+{
+    float: right;
+}
+
+.project-image img
+{
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    border: 4px solid #fff;
+}
+
+.project-image img:hover
+{
+    transform: scale(1.05);
+    box-shadow: 0 12px 25px rgba(249, 115, 22, 0.15);
+}
+
+.skills-container
+{
+    padding: 80px 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.skills-grid
+{
+    overflow: hidden;
+}
+
+.skills-grid::after
+{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.skill-card
+{
+    float: left;
+    width: 31%;
+    margin-right: 3.5%;
+    margin-bottom: 30px;
+    background: #fff;
+    padding: 35px 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.04);
+    border-top: 4px solid #f97316;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-card:nth-child(3n)
+{
+    margin-right: 0;
+}
+
+.skill-card:nth-child(3n+1)
+{
+    clear: left;
+}
+
+.skill-card:hover
+{
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(249, 115, 22, 0.12);
+}
+
+.skill-card h3
+{
+    font-size: 20px;
+    color: #1e1b4b;
+    margin-bottom: 12px;
+}
+
+.skill-card p
+{
+    font-size: 15px;
+    color: #666;
+}
+
+.contact-container
+{
+    padding: 60px 50px;
+    max-width: 600px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    margin-top: 50px;
+}
+
+.contact-container::after
+{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+form
+{
+    display: block;
+}
+
+input, textarea
+{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-family: inherit;
+    margin-bottom: 15px;
+    display: block;
+}
+
+textarea
+{
+    resize: vertical;
+    min-height: 120px;
+}
+
+.btn-submit
+{
+    padding: 12px;
+    background-color: #f97316;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 16px;
+    display: block;
+    width: 100%;
+}
+
+.btn-submit:hover
+{
+    background-color: #ea580c;
+}
